@@ -5,3 +5,5 @@ Este repositorio contiene las actividades realizadas y aprendidas durante el ter
 - Programacion orientada a objetos (POO)
 - Flask
 - HTML
+- Mejoramiento de bucles while
+- Bucles for
