@@ -1,4 +1,4 @@
-📌 Taller de POO del tercer Trimestre; Este taller evidencia los aprendizajes logrados en clase e inviduales de investigacion propia perteneciente al tercer trimestre del tecnico,como;
+📌 Taller de POO del tercer Trimestre; Este taller evidencia los aprendizajes logrados en clase e inviduales de investigacion propia perteneciente al tercer trimestre de el tecnico,como;
 - ¿Que es POO?
 - ¿Que son las clases,atributos y metodos?
 - Encapsulación, herencia, polimorfismo y abstracción.
