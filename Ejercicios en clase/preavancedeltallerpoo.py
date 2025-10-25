@@ -179,95 +179,187 @@ print("Ninguna como la anterior,ya que no hay mas de una clase por lo tanto no s
 
 
 
-# Gestor de productos
+# # Gestor de productos
+
+# class Productos:
+#     def __init__(self,nombre,precio,marca,fechaenquesehizo,fechaenquesevence):
+#         self.nombre = nombre
+#         self.precio = precio
+#         self.marca = marca
+#         self.fechaenquesehizo = fechaenquesehizo
+#         self.fechaenquesevence = fechaenquesevence
+#     def comprar(self):
+#         print(f"""Que buena eleccion de producto para comprar!!;
+#             nombre: {self.nombre},
+#             precio: {self.precio},
+#             marca: {self.marca},
+#             fecha en que se hizo: {self.fechaenquesehizo},
+#             fecha en que se vence: {self.fechaenquesevence}""")
+#     def registrar(self):
+#         print(f"""Que buena eleccion de producto!! para el registro;
+#             nombre: {self.nombre},
+#             precio: {self.precio},
+#             marca: {self.marca},
+#             fecha en que se hizo: {self.fechaenquesehizo},
+#             fecha en que se vence: {self.fechaenquesevence}""")
+                
+#     def vender(self):
+#         print(f"""Que buena eleccion de producto!! para vender;
+#             nombre: {self.nombre},
+#             precio: {self.precio},
+#             marca: {self.marca},
+#             fecha en que se hizo: {self.fechaenquesehizo},
+#             fecha en que se vence: {self.fechaenquesevence}""")
+
+# cliente1 = Productos(input("Que producto vas a ingresar: "),input("Ingresa su precio: "),input("Ingresa su marca: "),input("Ingresa su fecha en que se hizo: "),input("Ingresa la fecha en que se vence: "))
+# cliente2 = Productos(input("Que producto vas a ingresar: "),input("Ingresa su precio: "),input("Ingresa su marca: "),input("Ingresa su fecha en que se hizo: "),input("Ingresa la fecha en que se vence: "))
+# cliente3 = Productos(input("Que producto vas a ingresar: "),input("Ingresa su precio: "),input("Ingresa su marca: "),input("Ingresa su fecha en que se hizo: "),input("Ingresa la fecha en que se vence: "))
+
+# opcion1 = input("""Ingresa una opcion:
+#                 1. COMPRAR
+#                 2. REGISTRAR PARA LA TIENDA
+#                 3. VENDER
+#                 : """)
+# if opcion1 == "1":
+#     cliente1.comprar()
+# elif opcion1 == "2":
+#     cliente1.registrar()
+# elif opcion1 == "3":
+#     cliente1.vender()
+# else:
+#     print("Esa opcion no existe para la gestion de nuestros productos")
+
+
+# opcion22 = input("""Ingresa una opcion:
+#                 1. COMPRAR
+#                 2. REGISTRAR PARA LA TIENDA
+#                 3. VENDER
+#                 : """)
+
+# if opcion22 == "1":
+#     cliente2.comprar()
+# elif opcion22 == "2":
+#     cliente2.registrar()
+# elif opcion22 == "3":
+#     cliente2.vender()
+# else:
+#     print("Esa opcion no existe para la gestion de nuestros productos")
+
+
+# opcion3 = input("""Ingresa una opcion:
+#                 1. COMPRAR
+#                 2. REGISTRAR PARA LA TIENDA
+#                 3. VENDER
+#                 : """)
+# if opcion3 == "1":
+#     cliente3.comprar()
+# elif opcion3 == "2":
+#     cliente3.registrar()
+# elif opcion3 == "3":
+#     cliente3.vender()
+# else:
+#     print("Esa opcion no existe para la gestion de nuestros productos")
+
+
+
+# # ¿Qué clases identificas en el problema? 
+# print("La clase Productos, que representa un producto con su información (nombre, precio, marca, fechas) y permite gestionarlo mediante métodos como comprar, registrar o vender.")
+
+# # ¿Qué atributos y métodos tendría cada clase? 
+# print("""La unica y principal clase tendria;
+#       ------------- ATRIBUTOS: ----------------
+#       - nombre: nombre del producto
+#       - precio: precio del producto
+#       - marca: marca del producto
+#       - fechaenquesehizo: cuándo fue producido
+#       - fechaenquesevence: cuándo vence
+#       ------------- METODOS: -----------------
+#       - comprar(): imprime los datos del producto cuando se va a comprar
+#       - registrar(): imprime los datos al registrar el producto en la tienda
+#       - vender(): imprime los datos al vender el producto""")
+
+# # ¿Qué relaciones existen entre ellas? 
+# print("No hay relaciones entre clases, ya que el programa solo define una clase (Productos). Todos los objetos (cliente1, cliente2) son instancias de esa misma clase.")
+
+
+
+
+
+
+
+# Gestor de productos con herencia y polimorfismo
 
 class Productos:
-    def __init__(self,nombre,precio,marca,fechaenquesehizo,fechaenquesevence):
+    def __init__(self, nombre, precio, marca, fechaenquesehizo, fechaenquesevence):
         self.nombre = nombre
         self.precio = precio
         self.marca = marca
         self.fechaenquesehizo = fechaenquesehizo
         self.fechaenquesevence = fechaenquesevence
+
     def comprar(self):
-        print(f"""Que buena eleccion de producto para comprar!!;
-            nombre: {self.nombre},
-            precio: {self.precio},
-            marca: {self.marca},
-            fecha en que se hizo: {self.fechaenquesehizo},
-            fecha en que se vence: {self.fechaenquesevence}""")
+        print(f"""
+Que buena elección de producto para comprar!!
+Nombre: {self.nombre}
+Precio: {self.precio}
+Marca: {self.marca}
+Fecha en que se hizo: {self.fechaenquesehizo}
+Fecha en que se vence: {self.fechaenquesevence}
+        """)
+
     def registrar(self):
-        print(f"""Que buena eleccion de producto!! para el registro;
-            nombre: {self.nombre},
-            precio: {self.precio},
-            marca: {self.marca},
-            fecha en que se hizo: {self.fechaenquesehizo},
-            fecha en que se vence: {self.fechaenquesevence}""")
-                
+        print(f"""
+Producto registrado correctamente:
+Nombre: {self.nombre}
+Precio: {self.precio}
+Marca: {self.marca}
+Fecha en que se hizo: {self.fechaenquesehizo}
+Fecha en que se vence: {self.fechaenquesevence}
+        """)
+
     def vender(self):
-        print(f"""Que buena eleccion de producto!! para vender;
-            nombre: {self.nombre},
-            precio: {self.precio},
-            marca: {self.marca},
-            fecha en que se hizo: {self.fechaenquesehizo},
-            fecha en que se vence: {self.fechaenquesevence}""")
-
-cliente1 = Productos(input("Que producto vas a ingresar: "),input("Ingresa su precio: "),input("Ingresa su marca: "),input("Ingresa su fecha en que se hizo: "),input("Ingresa la fecha en que se vence: "))
-cliente2 = Productos(input("Que producto vas a ingresar: "),input("Ingresa su precio: "),input("Ingresa su marca: "),input("Ingresa su fecha en que se hizo: "),input("Ingresa la fecha en que se vence: "))
-
-opcion1 = input("""Ingresa una opcion:
-                1. COMPRAR
-                2. REGISTRAR PARA LA TIENDA
-                3. VENDER
-                : """)
-if opcion1 == "1":
-    cliente1.comprar()
-elif opcion1 == "2":
-    cliente1.registrar()
-elif opcion1 == "3":
-    cliente1.vender()
-else:
-    print("Esa opcion no existe para la gestion de nuestros productos")
+        print(f"""
+Producto vendido:
+Nombre: {self.nombre}
+Precio: {self.precio}
+Marca: {self.marca}
+Fecha en que se hizo: {self.fechaenquesehizo}
+Fecha en que se vence: {self.fechaenquesevence}
+        """)
 
 
+# 🧩 Clase hija que hereda de Productos
+class ProductoAlimenticio(Productos):
+    def __init__(self, nombre, precio, marca, fechaenquesehizo, fechaenquesevence, calorias):
+        # Heredamos atributos del padre
+        super().__init__(nombre, precio, marca, fechaenquesehizo, fechaenquesevence) # Super permite reutilizar el código de la clase padre sin volver a escribirlo.
+        self.calorias = calorias  # Atributo nuevo de la clase hija
 
-opcion2 = input("""Ingresa una opcion:
-                1. COMPRAR
-                2. REGISTRAR PARA LA TIENDA
-                3. VENDER
-                : """)
-
-if opcion2 == "1":
-    cliente2.comprar()
-elif opcion2 == "2":
-    cliente2.registrar()
-elif opcion2 == "3":
-    cliente2.vender()
-else:
-    print("Esa opcion no existe para la gestion de nuestros productos")
-
-
-# ¿Qué clases identificas en el problema? 
-print("La clase Productos, que representa un producto con su información (nombre, precio, marca, fechas) y permite gestionarlo mediante métodos como comprar, registrar o vender.")
-
-# ¿Qué atributos y métodos tendría cada clase? 
-print("""La unica y principal clase tendria;
-      ------------- ATRIBUTOS: ----------------
-      - nombre: nombre del producto
-      - precio: precio del producto
-      - marca: marca del producto
-      - fechaenquesehizo: cuándo fue producido
-      - fechaenquesevence: cuándo vence
-      ------------- METOODOS: -----------------
-      - comprar(): imprime los datos del producto cuando se va a comprar
-      - registrar(): imprime los datos al registrar el producto en la tienda
-      - vender(): imprime los datos al vender el producto""")
-
-# ¿Qué relaciones existen entre ellas? 
-print("No hay relaciones entre clases, ya que el programa solo define una clase (Productos). Todos los objetos (cliente1, cliente2) son instancias de esa misma clase.")
+    # Polimorfismo: redefinimos el método comprar()
+    def comprar(self):
+        print(f"""
+Has comprado un producto alimenticio:
+Nombre: {self.nombre}
+Precio: {self.precio}
+Marca: {self.marca}
+Calorías: {self.calorias}
+Fecha de fabricación: {self.fechaenquesehizo}
+Fecha de vencimiento: {self.fechaenquesevence}
+        """)
 
 
+# --- Ejemplos de instancias ---
+cliente1 = Productos("Perfume", "45000", "Aromax", "10/09/2025", "10/09/2030")
+cliente2 = ProductoAlimenticio("Yogurt", "2500", "Alpina", "20/10/2025", "27/10/2025", "120 kcal")
+cliente3 = Productos("Iphone", "14.500.000","Apple","10/08/2024","10/08/2030")
+cliente4 = ProductoAlimenticio("Leche","15.000","Alqueria","10/09/2005","10/06/2025","120 kcal")
 
-
+# --- Ejemplo de polimorfismo --- 
+# Cada cliente actua de diferente forma dependiendo del producto que compro; Si es alimenticio o si es un producto electronico
+cliente1.comprar()
+cliente2.comprar()
+cliente3.comprar()
+cliente4.comprar()
 
 
 
@@ -369,4 +461,22 @@ print("""La unica y principal clase tendria;
 # ¿Qué relaciones existen entre ellas? 
 print("""No existen relaciones entre clases, porque el programa solo utiliza una clase (Conversor).
 Todos los datos y la lógica están contenidos dentro de esa única clase, y no hay ninguna interacción con otras clases como Usuario, Moneda, o Transacción.""")
+
+
+
+
+
+
+         
+         
+         
+         
+         
+
+
+
+
+
+
+
 
