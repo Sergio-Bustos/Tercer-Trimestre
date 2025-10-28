@@ -1,7 +1,7 @@
-// 🟩 EJERCICIO 10: Clase Animal con herencia y polimorfismo
+//  EJERCICIO 10: Diseña una clase 'Animal' con un metodo hablar() que se sobreescriba en clases hijas como 'Perro' y 'Gato'
 
 
-// 🔹 Clase base "Animal"
+//  Clase base "Animal"
 // Esta clase representa cualquier tipo de animal genérico.
 // Las clases hijas heredarán sus atributos y redefinirán el método hablar().
 class Animal {
@@ -29,7 +29,7 @@ class Animal {
 }
 
 
-// 🔹 Clase hija: Gato
+//  Clase hija: Gato
 // Sobrescribe el método hablar() para emitir el sonido propio de un gato.
 class Gato extends Animal {
     public Gato(String nombre, String genero, int edad) {
@@ -43,7 +43,7 @@ class Gato extends Animal {
 }
 
 
-// 🔹 Clase hija: Perro
+//  Clase hija: Perro
 class Perro extends Animal {
     public Perro(String nombre, String genero, int edad) {
         super(nombre, genero, edad);
@@ -56,7 +56,7 @@ class Perro extends Animal {
 }
 
 
-// 🔹 Clase hija: Vaca
+//  Clase hija: Vaca
 class Vaca extends Animal {
     public Vaca(String nombre, String genero, int edad) {
         super(nombre, genero, edad);
@@ -69,7 +69,7 @@ class Vaca extends Animal {
 }
 
 
-// 🔹 Clase hija: Pollito
+//  Clase hija: Pollito
 class Pollito extends Animal {
     public Pollito(String nombre, String genero, int edad) {
         super(nombre, genero, edad);
@@ -82,7 +82,7 @@ class Pollito extends Animal {
 }
 
 
-// 🔹 Clase hija: Gallo
+//  Clase hija: Gallo
 class Gallo extends Animal {
     public Gallo(String nombre, String genero, int edad) {
         super(nombre, genero, edad);
@@ -95,7 +95,7 @@ class Gallo extends Animal {
 }
 
 
-// 🔹 Clase hija: Oveja
+//  Clase hija: Oveja
 class Oveja extends Animal {
     public Oveja(String nombre, String genero, int edad) {
         super(nombre, genero, edad);
@@ -107,7 +107,7 @@ class Oveja extends Animal {
     }
 }
 
-public class ejercicio10poo {
+public class ejercicio10poo{
     public static void main(String[] args) {
 
 

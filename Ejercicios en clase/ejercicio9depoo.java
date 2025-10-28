@@ -1,4 +1,4 @@
-// 🟩 EJERCICIO 9: Clase Producto
+//  EJERCICIO 9: Crea una clase 'Producto' con precio y cantidad,y un metodo para calcular el valor total del inventario
 
 class Producto {
 
@@ -26,7 +26,7 @@ class Producto {
     }
 }
 
-public class ejercicio9poo {
+public class ejercicio9depoo {
     public static void main(String[] args) {
         System.out.println("=== EJERCICIO 9: PRODUCTO ===");
         Producto p1 = new Producto("Laptop", 2500.0, 3);
@@ -37,7 +37,4 @@ public class ejercicio9poo {
         p2.mostrarInformacion();
         p3.mostrarInformacion();
     }
-
-
-
 }

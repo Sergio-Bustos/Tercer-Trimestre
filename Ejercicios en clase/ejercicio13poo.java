@@ -1,7 +1,7 @@
-// 🟩 EJERCICIO 13: Conversor de Temperaturas
+//  EJERCICIO 13: Diseña una clase ConversorTemperatura que convierta de Celsius a Fahrenheit y viceversa
 
 
-// 🔹 Clase base para conversión
+//  Clase base para conversión
 // Representa un conversor genérico que se especializa en clases hijas.
 class ConversorTemperatura {
 
@@ -18,7 +18,7 @@ class ConversorTemperatura {
 }
 
 
-// 🔹 Fahrenheit → Celsius
+//  Fahrenheit → Celsius
 class PasarF_a_C extends ConversorTemperatura {
 
     public PasarF_a_C(String nombre, double cantidad) {
@@ -33,7 +33,7 @@ class PasarF_a_C extends ConversorTemperatura {
 }
 
 
-// 🔹 Celsius → Fahrenheit
+//  Celsius → Fahrenheit
 class PasarC_a_F extends ConversorTemperatura {
 
     public PasarC_a_F(String nombre, double cantidad) {
