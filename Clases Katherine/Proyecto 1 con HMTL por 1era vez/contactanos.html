@@ -9,41 +9,135 @@
 
 <body> <!-- Aquí empieza el contenido visible de la página -->
 
-    <h1>Contactos</h1> <!-- Título principal de la página -->
+    <h1>Contactos/Contactanos</h1> <!-- Título principal de la página -->
     <h2><strong><span style = "color: rgba(57, 30, 210, 0.726);">HOME</span></strong></h2> <!-- Subtítulo con el texto "HOME" en color azul-violeta -->
 
 <ol> <!-- Lista ordenada principal (numerada) -->
 
-    <li>¿Quienes somos?</li> <!-- Primer elemento de la lista -->
+    <li><a href = "quienessomos.html">Quienes somos?</a></li>  <!-- Primer elemento de la lista principal -->
     <ul> <!-- Lista no ordenada (con viñetas) debajo del primer ítem -->
         <li>Somos una empresa fundada en 2021</li> <!-- Descripción del primer elemento -->
     </ul>
 
-    <li>¿Donde nos encuentras?</li> <!-- Segundo elemento -->
+    <li><a href = "dondenosencuentras.html">¿Donde nos encuentras?</a></li> <!-- Segundo elemento -->
     <ol> <!-- Lista ordenada secundaria dentro del segundo ítem -->
         <li>Colombia</li> <!-- País donde opera la empresa -->
         <li>Venezuela</li> <!-- Otro país donde tiene presencia -->
     </ol>
 
-    <li>Nuestros productos/Servicios</li> <!-- Tercer elemento -->
+    <li><a href = "nuestrosproductos.html">Nuestros productos</a></li> <!-- Tercer elemento -->
     <ol> <!-- Lista ordenada con los planes ofrecidos -->
         <li>Plan afiliativo a 80$</li> <!-- Primer plan -->
         <li>Plan afiliativo a 160$</li> <!-- Segundo plan -->
     </ol>
 
-    <li>Contactos/Redes sociales</li> <!-- Cuarto elemento -->
+    <li><a href = "redessociales.html">Redes sociales</a></li><!-- Cuarto elemento -->
     <ol> <!-- Lista con los medios de contacto -->
         <li>Instagram: @home.hogar</li> <!-- Red social -->
         <li>Numero: +57 313 619 8080</li> <!-- Número de contacto -->
     </ol>
 
-    <li>Carrito de compra</li> <!-- Quinto elemento -->
+    <li><a href = "carrito.html">Carrito de compra</a></li> <!-- Quinto elemento -->
     <ol> <!-- Lista con los productos que se pueden comprar -->
        <li>Plan afiliativo a 80$</li> <!-- Producto 1 -->
        <li>Plan afiliativo a 160$</li> <!-- Producto 2 -->
     </ol>
 
 </ol> <!-- Cierre de la lista principal -->
+<hr>
 
+<h1> <span style = "color:cadetblue">Para informacion para contactarnos responde este formulario 😉!</span></h1> <!-- Mensaje de informacion -->
+
+
+    <form> <!--Para poder empezar con el formulario,es como el metodo que lo permite -->
+
+    </br> <!-- Salto de linea -->
+
+    <h4>Mi primer formulario :D</h4> <!-- En pocas palabras el titulo -->
+
+    <p> <!-- Parrafo de texto-->
+
+        Ingresa tu nombre: <input type = "text" name = "nombres"> <!-- La especificacion de la variable nombres y el tipo de dato que sera para la entrada de datos del usuario-->
+
+    </p> <!-- Parrafo de texto-->
+
+        Ingresa tus apellidos: <input type = "text" name = "apellidos"> <!-- La especificacion de la variable apellidos y el tipo de dato que sera para la entrada de datos del usuario-->
+
+    </p> <!-- Parrafo de texto-->
+
+    <p> <!-- Parrafo de texto-->
+
+        Deja tu mensaje y escribenos! :D:
+        <br> <!-- Salto de linea -->
+
+        <textarea name = "mensaje"></textarea> <!-- En pocas palabras una bandeja que permite guardar texto -->
+        <p> <!-- Parrafo de texto-->
+
+            Fecha de nacimiento: <input type = "date" name = fecha_nacimiento> <!-- La especificacion de la variable fecha_nacimiento y el tipo de dato que sera para la entrada de datos del usuario-->
+
+            <p> <!-- Parrafo de texto-->
+                Seleccione tu tipo de documento: 
+                <br> <!-- Salto de linea -->
+                <select 
+                name = "Tipo_documento">
+                <option>R.C</option>
+                <option>T.I</option>
+                <option>C.C</option>
+                <option>C.E</option>
+
+            </select> <!---Lista desplegable-->
+            </p> <!-- Parrafo de texto-->
+        </p> <!-- Parrafo de texto-->
+    </p> <!-- Parrafo de texto-->
+
+    <p> <!-- Parrafo de texto-->
+        Digita tu numero de identificacion: <input type = "number" name = "documento">  <!-- La especificacion de la variable documento y el tipo de dato que sera para la entrada de datos del usuario-->
+    </p>
+    <p>Adjunta tu foto:
+        <input type = "file" name = "foto">
+    </p>
+    <br>
+    <br>
+    <input type = "submit" value = "Enviar los datos en este formulario">
+    </form>
+    <br>
+<hr>
+<br>
+<table border ="10">
+    <td colspan = "3">Pros y contras de contactarnos a nosotros 😉.</td>
+    <tr>
+        <td>CONTRAS</td>
+        <td>PROS</td>
+
+    </tr>
+
+<!--------------------------------------1-------------------------------------->
+    <tr>
+        <td>No contactarnos</td>
+        <td>Somos una empresa que te oye por siempre </td>
+    <tr>
+
+<!--------------------------------------2-------------------------------------->
+
+    <tr>
+        <td>No atreverte! Tranquilo somos de alta confianza</td>
+        <td>Acceder a mejores cotizaciones</td>
+
+    </tr>
+
+<!--------------------------------------3-------------------------------------->
+
+    <tr>
+        <td>No confiar en nosotros,tranquilo somos una empresa solidaria</td>
+        <td>Somos una empresa confiable y barata </td>
+    </tr>
+<!---------------------------------------------------------------------------->
+<tr>
+    <td>No cotizar,tranquilo somos baratos y fiables 👌</td>
+    <td>Por contactarnos te damos descuentos</td>
+</tr>
+</table>
 </body> <!-- Cierre del cuerpo del documento -->
 </html> <!-- Cierre del documento HTML -->
+
+
