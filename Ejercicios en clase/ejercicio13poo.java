@@ -49,7 +49,7 @@ class PasarC_a_F extends ConversorTemperatura {
 
 public class ejercicio13poo {
     public static void main(String[] args) {
-        System.out.println("=== EJERCICIO 13: CONVERSOR DE TEMPERATURA ===");
+        System.out.println(" EJERCICIO 13: CONVERSOR DE TEMPERATURA ");
 
         PasarF_a_C conversion1 = new PasarF_a_C("Fahrenheit", 212);
         PasarC_a_F conversion2 = new PasarC_a_F("Celsius", 100);

@@ -112,7 +112,7 @@ public class ejercicio10poo{
 
 
 
-        System.out.println("=== EJERCICIO 10: ANIMALES ===");
+        System.out.println(" EJERCICIO 10: ANIMALES ");
 
         // Se crean varios animales con valores definidos
         Gato gato = new Gato("Michi", "Hembra", 2);

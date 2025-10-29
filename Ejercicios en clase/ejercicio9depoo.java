@@ -28,7 +28,7 @@ class Producto {
 
 public class ejercicio9depoo {
     public static void main(String[] args) {
-        System.out.println("=== EJERCICIO 9: PRODUCTO ===");
+        System.out.println(" EJERCICIO 9: PRODUCTO ");
         Producto p1 = new Producto("Laptop", 2500.0, 3);
         Producto p2 = new Producto("Teléfono", 1200.5, 5);
         Producto p3 = new Producto("Mouse", 80.75, 10);
