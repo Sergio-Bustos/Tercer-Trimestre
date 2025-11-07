@@ -463,11 +463,66 @@ print("""No existen relaciones entre clases, porque el programa solo utiliza una
 Todos los datos y la lógica están contenidos dentro de esa única clase, y no hay ninguna interacción con otras clases como Usuario, Moneda, o Transacción.""")
 
 
+# Del curso de POO:
+# Crea una clase llamada “Automovil”.
+# Declara al menos tres atributos y tres métodos dentro.
+# Usa los atributos en por lo menos un método
+# Usa parámetros especiales en alguno de los métodos
+# Crea dos instancias y llama a alguno de sus métodos.
+
+class Automovil:
+    def __init__(self,marca,precio,año_de_fabricacion):
+        self.marca = marca
+        self.precio = precio
+        self.año_de_fabricacion = año_de_fabricacion
+    def conducir(self):
+        print(f" Carro: {self.marca}, Precio: {self.precio}, Año de fabricacion: {self.año_de_fabricacion} esta conduciendo actualmente")
+    def frenar(self):
+        print(f" Carro: {self.marca}, Precio: {self.precio}, Año de fabricacion: {self.año_de_fabricacion} acabó de frenar")
+    def acelerar(self):
+        print(f" Carro: {self.marca}, Precio: {self.precio}, Año de fabricacion: {self.año_de_fabricacion} acabó de acelerar")
+
+carro1 = Automovil("BMW","1.200.000","2024")
+carro1.frenar()
+carro2 = Automovil("Chevrolet","1.200.000","2024")
+carro2.conducir()
+carro3 = Automovil("Audi","1.400.000.000","2009")
+carro3.acelerar()
 
 
-
+# Maestro del curso de POO:
+class Maestro:
+    def __init__(self,nombre,edad,escuela):
+        self.nombre = nombre
+        self.edad = edad
+        self.escuela = escuela
+    def comer(self):
+        print(f"""
+El profesor: {self.nombre}
+de edad: {self.edad} 
+en la escuela: {self.escuela} esta comiendo su desayuno
+""")
+    def enseñar(self):
+        print(f"""
+El profesor: {self.nombre}
+de edad: {self.edad} 
+en la escuela: {self.escuela} esta enseñando su materia
+""")
+    def enseñar(self):
+        print(f"""
+El profesor: {self.nombre}
+de edad: {self.edad} 
+en la escuela: {self.escuela} esta enseñando su materia
+""")
+    
+maestro1 = Maestro("Luis","15","La Milagrosa")
+maestro1.comer()
+maestro2 = Maestro("Carlos","27","Nuestra señora del palmar")
+maestro2.enseñar()
+        
 
          
+    
          
          
          
