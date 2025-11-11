@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html", titulo="Registro de cuenta")
 
-# Página de inicio de sesión
+# Página de inicio de sesión.
 @app.route('/login')
 def login():
     return render_template("index2.html", titulo="Inicio de sesión")
