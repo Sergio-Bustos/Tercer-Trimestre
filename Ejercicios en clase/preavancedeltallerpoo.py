@@ -600,3 +600,181 @@
 #         self.precio = precio
 #         self.ingredienteprincipal = ingredienteprincipal
 #         self.cocinero = cocinero
+
+
+
+
+
+# # Clase abstracta
+
+# from abc import ABC, abstractmethod # Se importan algunas librerias
+
+# class Persona(ABC): # Se crea la clase basada en una libreria
+#     def __init__(self, edad, nombre): # Constructor de la clase
+#         self.edad = edad # Atributo edad
+#         self.nombre = nombre # Atributo nombre
+#         print("Se ha creado a", self.nombre, "de", self.edad) # Mensaje de creacion de la persona
+
+#     @abstractmethod # Metodo abstracto
+
+#     def hablar(self, mensaje): # Constructor del metodo hablar
+#         pass
+
+# class Deportista(Persona): # Clase hija que hereda de Persona
+#     def __init__(self, edad, nombre, deporte): # Constructor de la clase hija
+#         super().__init__(edad, nombre) # Llama al constructor de la clase padre
+#         self.deporte = deporte # Atributo deporte; Llama los atributos de la clase padre para sobreescribir otro en Deportista
+#         print("Se ha creado a", self.nombre, "de", self.edad) # Mensaje de creacion de la persona deportista
+
+#     def practicarDeporte(self): # Metodo practicarDeporte
+#         print(self.nombre, ": voy a practicar", self.deporte) # Mensaje de practica de deporte
+
+#     def verMiDeporte(self): # Metodo verMiDeporte
+#         return self.deporte # Retorna el deporte del deportista
+
+#     def hablar(self, mensaje): # Implementacion del metodo hablar
+#         print(f"{self.nombre} dice: {mensaje}")     # Mensaje de habla del deportista
+
+# luis = Deportista("18", "Luis", "natacion")     # Creacion de un objeto de la clase Deportista
+# luis.hablar("Hola soy Sergio el amigo de Luis")    # Llamada al metodo hablar
+# luis.practicarDeporte() # Llamada al metodo practicarDeporte
+# print("Luis practica", luis.verMiDeporte()) # Llamada al metodo verMiDeporte
+
+
+
+
+
+# # III.	Usa tu IDE para crear dos subclases de la siguiente clase :
+
+# class Animal: # Clase base Animal
+#     def __init__(self): # Constructor de la clase Animal
+#         print("Ha nacido un animal!") # Mensaje de creacion del animal
+#     def rugir(self): # Metodo rugir
+#         print ("Y hace un ruido") # Mensaje de rugido del animal
+
+
+# class Perro(Animal): # Clase hija Perro que hereda de Animal
+#     def __init__(self): # Constructor de la clase Perro
+#         super().__init__() # Llama al constructor de la clase padre
+#         print("Ha nacido un perro") # Mensaje de creacion del perro
+#     def rugir(self): # Metodo rugir sobreescrito
+#         print("El perro ladra: ¡Guau guau!")   # Mensaje de ladrido del perro
+
+
+
+
+
+# # IV.	Crea dos subclases de	“FiguraRegular” que definan el método para calcular su área respectiva según el número de lados, y almacenarla en el atributo “area”. Crea una instancia de cada una.
+
+# class FiguraRegular(ABC): # Clase base FiguraRegular
+#     def __init__(self, num_lados): # Constructor de la clase FiguraRegular
+#         self.num_lados = num_lados # Atributo num_lados
+#         self.area = 0 # Atributo area inicializado en 0
+
+#     @abstractmethod # Metodo abstracto para calcular el area
+#     def calcular_area(self):
+#         pass
+# class Cuadrado(FiguraRegular): # Clase hija Cuadrado que hereda de FiguraRegular
+#     def __init__(self, lado): # Constructor de la clase Cuadrado
+#         super().__init__(4) # Llama al constructor de la clase padre con 4 lados
+#         self.lado = lado # Atributo lado
+
+#     def calcular_area(self): # Metodo para calcular el area del cuadrado
+#         self.area = self.lado ** 2 # Calcula el area del cuadrado
+#         return self.area # Retorna el area calculada
+# class Triangulo(FiguraRegular): # Clase hija Triangulo que hereda de FiguraRegular
+#     def __init__(self, base, altura): # Constructor de la clase Triangulo
+#         super().__init__(3) # Llama al constructor de la clase padre con 3 lados
+#         self.base = base # Atributo base
+#         self.altura = altura # Atributo altura
+
+#     def calcular_area(self): # Metodo para calcular el area del triangulo
+#         self.area = (self.base * self.altura) / 2 # Calcula el area del triangulo
+#         return self.area # Retorna el area calculada    
+# # Crear instancias y calcular areas
+# cuadrado = Cuadrado(5) # Instancia de Cuadrado con lado 5
+# print("Área del cuadrado:", cuadrado.calcular_area()) # Imprime el area del cuadrado        
+# triangulo = Triangulo(4, 6) # Instancia de Triangulo con base 4 y altura 6
+# print("Área del triángulo:", triangulo.calcular_area()) # Imprime el area del triangulo
+
+
+
+
+# # V.	Crea dos implementaciones de la siguiente clase abstracta:
+
+# from abc import ABCMeta, abstractmethod # Se importan algunas librerias
+# class Transporte:       # Clase base Transporte
+#  metaclass  = ABCMeta   # Define la metaclase para Transporte
+# def  init (self, medio): self.medio = medio         # Constructor de la clase Transporte
+# #Usar el atributo "medio" para definir como avanza
+# @abstractmethod
+# def avanzar(self, frase): pass   # Metodo abstracto avanzar
+# def giraIzquierda(self): # Metodo giraIzquierda
+#    print("Gira a la izquierda")
+# def giraDerecha(self):  # Metodo giraDerecha
+#    print("Gira a la derecha")
+
+# #De acuerdo al "medio" especificar que hace para frenar
+# @abstractmethod
+# def detener(self): pass       # Clase hija Bicicleta que hereda de Transporte
+# class Bicicleta(Transporte): # Clase hija Bicicleta que hereda de Transporte
+#  def  init (self): # Constructor de la clase Bicicleta
+#    super(). init ("terrestre") # Llama al constructor de la clase padre con medio "terrestre"
+#  def avanzar(self, frase): # Metodo para avanzar la bicicleta
+#    print (f"La bicicleta avanza pedaleando: {frase}")# Mensaje de avance de la bicicleta
+#  def detener(self): #    Metodo para detener la bicicleta
+#    print ("La bicicleta frena con los frenos de mano") # Mensaje de detencion de la bicicleta
+# class Barco(Transporte): # Clase hija Barco que hereda de Transporte
+#  def  init (self): # Constructor de la clase Barco
+#    super(). init ("acuático") # Llama al constructor de la clase padre con medio "acuático"
+#  def avanzar(self, frase): # Metodo para avanzar el barco
+#    print (f"El barco avanza navegando: {frase}") # Mensaje de avance del barco
+#  def detener(self): # Metodo para detener el barco
+#    print ("El barco frena con anclas")      # Mensaje de detencion del barco
+# # Crear instancias y probar métodos
+# bicicleta = Bicicleta()         
+# bicicleta.avanzar("Pedaleando fuerte")
+# bicicleta.detener()
+# barco = Barco()
+# barco.avanzar("Remando con fuerza") 
+# barco.detener()
+
+
+# # CLASE PADRE
+# class Animal:
+#     def __init__(self,nombre,edad): # Constructor de la clase con sus atributos
+#         self.nombre = nombre # Atributo 1
+#         self.edad = edad # Atributo 2
+
+# # PRIMERA CLASE QUE HEREDA
+
+# class Felino(Animal): # Clase Felino que hereda de padre (Animal)
+#     def __init__(self,nombre,edad,raza): # Constructor de la clase
+#         super().__init__(nombre,edad) # super().__init__ ayuda a conservar los mismos atributos que la clas padre
+#          # Es como pedir ayuda a la clase padre al crear un nuevo objeto en la clase hija. Garantiza que tanto el código de configuración de la clase padre como el de la hija se ejecuten correctamente, garantizando así un inicio perfecto
+#         self.raza = raza # Atributo de la propia clase; polimorfismo
+
+#     def maullar(self): # Metodo maullar propio de la clase Felino
+#         print(f"El gato de nombre: {self.nombre},de edad: {self.edad} años de raza {self.raza} esta maullando") # Mensaje
+# # Instancias de la clase Felino
+# gato1 = Felino("Stuart",15,"Negro")
+# gato1.maullar()
+
+
+
+# # SEGUNDA CLASE QUE HEREDA
+
+# class Canino(Animal): # Clase hija que hereda
+#     def __init__(self,nombre,edad,raza): # Constructor de la clase  con los atributos
+#         super().__init__(nombre,edad) # Super init nos ayuda a guardar los atributos 
+#         self.raza = raza # Atributo propio de la clase canino
+#     def ladrar(self): # Metodo ladrar
+#         print(f""" El perro 
+#               de nombre: {self.nombre}
+#               de edad: {self.edad}
+#               de raza: {self.raza}
+# """)    # Mensaje
+
+# # INSTANCIAS DE LA CLASE
+# canino1 = Canino("Sussy",16,"Beagle")
+# canino1.ladrar()
